@@ -15,6 +15,7 @@ driver.get("https://google.com")
 print(driver.title)
 
 search = driver.find_element_by_name("q")
+search.clear()
 search.send_keys("Test")
 search.send_keys(Keys.RETURN)
 
